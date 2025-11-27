@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Freddi Giorgio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font: Barlow -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Barlow', sans-serif;
+      background-color: #eef2f2;
+      color: #00393b;
+    }
+
+    /* Main container */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 100px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+
+    /* Header section */
+    .header-section {
+      background: linear-gradient(135deg, #056d6f, #298688);
+      color: white;
+      padding: 50px;
+      border-radius: 14px;
+      margin-bottom: 50px;
+    }
+
+    .header-section h1 {
+      font-weight: 700;
+      font-size: 2.7rem;
+    }
+
+    .header-info p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    /* Photo box (temporary placeholder) */
+    .photo-box {
+      width: 180px;
+      height: 220px;
+      background-color: #00393b33;
+      border: 3px solid #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* Section title */
+    .section-title {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #056d6f;
+      border-left: 6px solid #298688;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+
+    /* Privacy */
+    .privacy-text {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #00393bcc;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-container {
+        padding: 10px 20px;
+      }
+      .header-section {
+        text-align: center;
+      }
+    }
+
+    /* When page reaches minimum width */
+    @media (max-width: 576px) {
+      .header-section {
+        border-radius: 0 !important;
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+
+      .row {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    /* PRINT MODE */ */
+    @media print {
+      body {
+        background: white;
+      }
+      .main-container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+      }
+      .header-section {
+        border-radius: 0;
+      }
+      .photo-box {
+        border: 2px solid #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+
+    <!-- HEADER -->
+    <div class="header-section row align-items-center">
+      <div class="col-md-8 col-12 header-info">
+        <h1>FREDDI GIORGIO</h1>
+        <p><strong>Telefono:</strong> 3333827810</p>
+        <p><strong>Email:</strong> giorgio.fre@alice.it</p>
+        <p><strong>Nascita:</strong> 21/09/1996</p>
+        <p><strong>Residenza:</strong> Roncello (MB)</p>
+      </div>
+      <div class="col-md-4 col-12 text-md-end text-center mt-4 mt-md-0">
+        <!-- Photo Placeholder -->
+        <div class="photo-box">INSERISCI FOTO</div>
+      </div>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="row">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-md-6 col-12">
+        <div class="section-title">ESPERIENZA PROFESSIONALE</div>
+        <ul>
+          <li><strong>Giugno 2024 - In corso</strong><br>Operatore grafico: stampa plotter digitale, produzione transfer per tessuti.<br>Stilscreen (Bellusco, MB)</li>
+          <li><strong>Agosto 2015 - Giugno 2024</strong><br>Grafico impaginatore: contenuti per web e quotidiani cartacei.<br>Italiamedia (Cernusco sul Naviglio, MI)</li>
+          <li><strong>Settembre 2020 - Marzo 2021</strong><br>Inserimento dati, vendita online.<br>www.electronic-world.it (REMOTE)</li>
+          <li><strong>Marzo 2017 - Giugno 2017</strong><br>Stage: aiuto organizzazione eventi.<br>Events & Exhibitions (Merate, LC)</li>
+          <li><strong>Dicembre 2013 - Febbraio 2014</strong><br>Stage: allestimento exhibition stands.<br>Icona Grafiche (Cassina De Pecchi, MI)</li>
+          <li><strong>Luglio 2013 - Settembre 2013</strong><br>Grafico impaginatore: realizzazione catalogo merce.<br>Eurograph (Agrate, MB)</li>
+          <li><strong>Febbraio 2013 - Marzo 2013</strong><br>Stage: Legatoria.<br>Isabel Litografia (Gessate, MI)</li>
+          <li><strong>Aprile 2012</strong><br>Stage: creazione loghi, impaginati.<br>Team Graphic (Gorgonzola, MI)</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-md-6 col-12">
+        <div class="section-title">ISTRUZIONE E FORMAZIONE</div>
+        <ul>
+          <li><strong>Dicembre 2016 - Luglio 2017</strong><br>Corso IFTS - Social media marketing del territorio e dei beni culturali</li>
+          <li><strong>Settembre 2010 - Giugno 2014</strong><br>Diploma professionale di Tecnico Grafico<br>Fondazione Istituto Rizzoli per l’insegnamento delle arti grafiche<br>Qualifica professionale 3° livello europeo</li>
+        </ul>
+
+        <div class="section-title">SOFTWARE APPLICATIVI</div>
+        <ul>
+          <li>Adobe: Illustrator, Indesign, Photoshop, After Effects, XD</li>
+          <li>QuarkXpress</li>
+        </ul>
+
+        <div class="section-title">LINGUE</div>
+        <ul>
+          <li>Madrelingua: Italiano</li>
+          <li>Inglese: A1</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- PRIVACY -->
+    <div class="privacy-text">
+      Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs 196 del 30 giugno 2003 e dell’art. 13 GDPR (Regolamento UE 2016/679) ai fini della ricerca e selezione del personale.
+    </div>
+
+  </div>
+
+</body>
+</html>
