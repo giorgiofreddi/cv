@@ -21,7 +21,7 @@
     /* Main container */
     .main-container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 50px auto;
       padding: 40px 100px;
       background: white;
       border-radius: 14px;
@@ -50,18 +50,25 @@
 
     /* Photo box (temporary placeholder) */
     .photo-box {
-      width: 180px;
-      height: 220px;
-      background-color: #00393b33;
-      border: 3px solid #fff;
+      width: 220px;
+      height: 260px;
+      background-color: #00272833;
       border-radius: 12px;
+      overflow: hidden; /* enables cropping */
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
-      color: #ffffff;
-      font-weight: 600;
-      text-transform: uppercase;
+      position: relative;
+      margin: auto;
+    }
+
+    .photo-box img {
+      scale: 130%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* crop to box */
+      object-position: center top;
+      transform: translateY(45px) translateX(-7px); /* move image downward */
     }
 
     /* Section title */
@@ -82,7 +89,7 @@
     /* Privacy */
     .privacy-text {
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.80rem;
       color: #00393bcc;
       margin-top: 50px;
     }
@@ -97,6 +104,22 @@
       }
     }
 
+    /* PHOTO-BOX: da 576px a 920px segue la larghezza del contenitore */
+    @media (min-width: 576px) and (max-width: 920px) {
+      .photo-box {
+        width: 100% !important;   /* si adatta alla larghezza della colonna */
+        height: auto !important;  /* mantiene le proporzioni */
+        max-width: 300px;          /* limite per non diventare troppo grande */
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .photo-box img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+      }
+    }
+
     /* When page reaches minimum width */
     @media (max-width: 576px) {
       .header-section {
@@ -105,13 +128,17 @@
         margin-right: -20px;
       }
 
+      .photo-box  {
+        margin: auto;
+      }
+
       .row {
         padding-left: 15px;
         padding-right: 15px;
       }
     }
 
-    /* PRINT MODE */ */
+    /* PRINT MODE */
     @media print {
       body {
         background: white;
@@ -145,7 +172,7 @@
       </div>
       <div class="col-md-4 col-12 text-md-end text-center mt-4 mt-md-0">
         <!-- Photo Placeholder -->
-        <div class="photo-box">INSERISCI FOTO</div>
+        <div class="photo-box"><img src="links/IMG_2657-tiny.png"></div>
       </div>
     </div>
 
